@@ -1,0 +1,40 @@
+.search-form-container {
+    padding: 10px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    transition: all 0.2s ease-in;
+}
+
+.search-form {
+    width: 100%;
+    display: flex;
+    &__query, &__categories, &__location, &__geocode, &__submit {
+        padding: 20px 10px;
+        border: none;
+    }
+    &__query {
+        width: 50%;
+    }
+    &__categories, &__location {
+        width: 20%;
+    }
+    &__geocode, &__submit {
+        width: 5%;
+    }
+    &__categories {
+        -webkit-appearance: none; 
+        -moz-appearance: none;
+        appearance: none;
+        background: #FFFFFF url('./assets/chevron-down-solid.svg') 95% / 15px no-repeat;
+        border-left: 3px dotted #979797;
+        border-right: 3px dotted #979797;
+    }
+    &__geocode {
+        background: #FFFFFF url('./assets/location.png') center / 50% no-repeat;
+    }
+    &__submit {
+        background: #1DC1DD url('./assets/search.png') center / 40% no-repeat;
+    }
+}
